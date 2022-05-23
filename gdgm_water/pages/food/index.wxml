@@ -1,0 +1,36 @@
+<view class="container">
+    <view class="cu-bar search bg-white">
+        <view class="search-form round">
+            <text class="cuIcon-search"></text>
+            <input type="text" placeholder="搜索" confirm-type="search"></input>
+        </view>
+        <view class="action">
+            <button class="cu-btn text-white shadow-blur round" size="mini" style="background-color: #002fa7;">搜索</button>
+        </view>
+    </view>
+    <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" interval="5000" indicator-dots="true" circular="true" autoplay="true" duration="500">
+        <swiper-item wx:for="{{swiperList}}" wx:key>
+            <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+            <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+        </swiper-item>
+
+    </swiper>
+    <view class="margin-top">
+        <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+            <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{categories}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+                {{item}}
+            </view>
+        </scroll-view>
+    </view>
+
+    <view class="good-container">
+        <view class="goods-box" wx:for-items="{{goods}}" data-id="{{item.id}}">
+            <view class="img-box">
+                <image src="{{item.pic_url}}" class="image" mode="aspectFit" lazy-load="true" />
+            </view>
+            <view class="goods-title">{{item.name}}</view>
+            <view class="goods-price text-price text-red">{{item.price}}</view>
+        </view>
+    </view>
+
+</view>

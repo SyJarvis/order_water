@@ -1,0 +1,41 @@
+<view class="container">
+    <view class="bg-img bg-mask padding-tb-xl" style="background-image:url('../../images/pc.jpg');height:138px;">
+        <view class="flex solid-bottom padding justify-start">
+            <view class="cu-avatar xl round" style="background-image: url('https://thirdwx.qlogo.cn/mmopen/vi_32/Ntu9fwwtR57BELQ0wzT4Gia1pIAC82pwqSOoppt0ps6B9PIuW9aqVj9zYLofAAbZJZy0tcOIdelXcklKGuvql2w/132');"></view>
+            <view>
+                <view class="solid-bottom text-xl text-white padding-left">上邪</view>
+                <view class="solid-bottom text-xs text-white padding">广东工贸职业技术学院西区1号201宿舍</view>
+            </view>
+        </view>
+
+    </view>
+    <view class="content">
+        <view class="f  wallet">
+            <view class="flex justify-center">
+                <view class="basis-df">
+                    <view class="yue-price text-price">56</view>
+                    <view class="font-price">余额</view>
+                </view>
+                <view class="basis-df">
+                    <view class="water_price text-price">1</view>
+                    <view class="font-price">水票</view>
+                </view>
+            </view>
+        </view>
+        <view class="bg-white align-center" style="height: 500rpx;">
+           <view class="text-sxl padding">常用功能</view>
+           <view class="grid col-3 margin-bottom text-center">
+                <view>交易记录</view>
+                <view>收货地址</view>
+                <view>服务中心</view>
+                <view>意见反馈</view>
+                <view>系统设置</view>
+                <view>常见问题</view>
+           </view>
+        </view>
+
+        <view style="margin: auto;">
+            <button class="cu-btn bg-green lg button-hover" role="button">退出登录</button>
+        </view>
+    </view>
+</view>

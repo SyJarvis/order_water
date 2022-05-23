@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="remind-box">
+    </view>
+    <block>
+        
+        <view>工贸订水</view>
+        <view class="confirm-btn">
+        <text>您暂未授权工贸订水小程序获取您的信息，将无法正常使用小程序的功能，如需要正常使用，请点击"授权"按钮，打开头像，昵称等信息的授权</text>
+        </view>
+
+        <button class="confirm-btn" bindtap="getUserProfile">授权登录</button>
+        <button>返回首页</button>
+        <!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号码</button> -->
+        <!-- <button class="" bindtap="click_tap">点击</button> -->
+    </block>
+</view>

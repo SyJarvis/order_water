@@ -1,0 +1,19 @@
+    <!-- <view class="status-box">
+        <view class="status-label {{index == currentType ? 'active':''}}" wx:for-items="{{statusType}}" wx:key="{{index}}" data-index="{{index}}">
+            {{item}}
+            <view class="{{tabClass[index]}}"></view>
+        </view>
+    </view> -->
+    <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">布局</view></cu-custom>
+    <scroll-view class="bg-blue nav text-center fixed">
+        <view bindtap="tabSelect" class="cu-item {{index==currentType?'text-write cur':''}}" wx:key="{{index}}" wx:for-items="{{statusType}}" data-id="{{index}}">
+            {{item}}
+            <view class="{{tabClass[index]}}"></view>
+        </view>
+    </scroll-view>
+    <view class="cu-bar bg-white margin-top solid-bottom">
+        <view class="action">
+            <text class="cuIcon-title text-blue"></text>
+            等分列
+        </view>
+    </view>
