@@ -4,7 +4,7 @@ flask-sqlacodegen "mysql://root:mysql0220@127.0.0.1/order_water" --tables member
 
 
 
-![1653286096432](https://github.com/SyJarvis/order_water/blob/main/images/1653286096432.png)
+![](https://github.com/SyJarvis/order_water/blob/main/images/01.jpg)
 
 
 
