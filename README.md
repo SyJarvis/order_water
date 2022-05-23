@@ -4,7 +4,7 @@ flask-sqlacodegen "mysql://root:mysql0220@127.0.0.1/order_water" --tables member
 
 
 
-![1653286096432](document/img/1653286096432.png)
+![1653286096432](./1653286096432.png)
 
 
 
@@ -12,7 +12,7 @@ flask-sqlacodegen "mysql://root:mysql0220@127.0.0.1/order_water" --tables member
 
 
 
-![1653286210350](document/img/1653286210350.png)
+![1653286210350](./1653286210350.png)
 
 
 
